@@ -1,54 +1,95 @@
  * {
 
 	font-family: 'Inter', sans-serif;
-	font-weight:100;
+	font-weight:900;
+
 
 }
 body{
-	background: #4445;
+	background: #000;
+	margin: auto;
+
 }
+
 .div-contenedor{
+
 	display: flex;	
 	align-items: center;
 	justify-content: center;
-	flex-wrap: wrap-reverse;
+	flex-wrap: wrap;
 	background: #444;
-	margin: 50px 50px;
+	margin: 60px 30px;
+	border: 3px outset #27AE60;
+	box-shadow: 0px 0px 9px  5px #515A5A;
 
 }
 
 .from {
-	min-width: 400px;
+
+	min-width: 400px;	
 	flex:1;
 	text-align: center;
 	padding: 30px;
+	order: 5;
 }
 
 .from-input{
 
 	width: 100%;
-	padding: 7px;
-	margin: 6px 0px;
+	padding: 12px;
+	margin: 9px 0px;
+	border:none;
+	border-bottom: 3px solid #27AE60;
+	border-radius: 5px;
+	background: transparent;
+	box-shadow: .1px .1px .1px  1px #515A5A;
+	text-shadow: 0px 0px 0px;
+	color:#fff;
+	
+}
+.from-input:focus{
+	outline: none;
+	background: linear-gradient(to bottom, transparent, #333);
+	border: none;
+}
+.from-input:hover{
+	outline: 3px outset #27AE60;
 }
 .from textarea{
 	min-height: 140px;
-}
-.from-imagen{
-	min-width: 400px;
-	padding:40px;
+	resize:none;	
+}	
+
+.from-imagen{	
 	display: flex;
-	flex:1;	
-	background-color: #eaa7;
-	border-radius: 50%;
-	text-align: center;
+	flex:.5;	
+	padding: 25px;
+	order: 1;
 }
-.imagen-conteiner{
-flex: 1;
+.from-imagen div{
+	min-width: 300px;
+	max-width: 400px;
+	padding: 20px;
+	border-radius: 50%;
+	border: .005px solid #626567;
+
+	
+	
+}
+.imagen-conteiner {
+
+	margin: auto;
+}
+.imagen-conteiner div {
+	background-color: #fff;
+	text-align: center;
+	padding: 30px;
+	background-color: #444;
 }
 .from-imagen img{
+
 	margin: auto;
-	<-- -->
-	width: 60%;
+	width: 90%;
 	
 
 }
